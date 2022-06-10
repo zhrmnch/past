@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+
+    <link href="styles/styles.css" rel="stylesheet" type="text/css">
+
+    <title>May Hair Salon</title>
+</head>
+
+<body>
+
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-md fixed-up">
+        <div class="container-xxl">
+            <a href="" class="navbar-brand">
+                <img src="/assets/logo.png" alt="May Hair Salon" width="100" height="" href="index.html">
+            </a>
+
+            <!--toggle button for mobile app-->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#main-navbar"
+                aria-controls="main-navbar" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end align-center" id="main-navbar">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link " href="index.html">HOME</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="stylists.html">STYLISTS</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link " href="services.html">SERVICES</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="location.html">LOCATION</a>
+                    </li>
+                    <li class="nav-item d-md-none">
+                        <a class="nav-link" href="booknow.html">BOOK NOW</a>
+                    </li>
+                    <li class="nav-item ms-2 d-none d-md-inline">
+                        <a class="btn btn-secondary" href="booknow.html">BOOK NOW</a>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <section>
+        <div class="container-lg my-3 py-5">
+            <div class="text-center">
+                <h2 class="display-4">Hello Ottawa</h2>
+                <p class="lead text-muted"> We are serving our community since 2020.</p>
+            </div>
+            <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
+                        class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                        aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                        aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="/assets/slide1.jpg" class="d-block w-100" alt="slide1">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="/assets/slide2.jpg" class="d-block w-100" alt="slide2">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="/assets/slide3.jpg" class="d-block w-100" alt="slide3">
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+
+            <div class="my-4 mx-5">
+                <p class="lead " style="color:#25274d;"> We are located at 123 Ottawa street, in our beautiful city Ottawa!</p>
+                <p class="lead " style="color:#25274d;" >Please give us a call at (613) 678 9900 to reserve a parking spot!</p>
+            </div>
+        </div>
+    </section>
+
+    <hr style="border:solid;" />
+    <footer>
+        <div>
+            <div class="container-xxl text-center">
+                <div class="row">
+                    <div class="col-lg-3">
+
+                        <h6 class="footer-header-font">Our Address:</h6>
+                        <p class="footer-content-font text-muted">123 Ottawa street</p>
+                        <p class="footer-content-font text-muted">Ottawa, Ontario, O2O 7U7</p>
+                        <hr />
+                        <h6 class="footer-header-font">Contact Information:</h6>
+                        <p class="footer-content-font text-muted">Phone-number: (613) 678 9900</p>
+                        <p class="footer-content-font text-muted">Email: info@mayhairstudio.ca</p>
+
+                    </div>
+                    <div class="col-lg-3">
+
+                        <h6 class="footer-header-font">Hours of Operation: </h6>
+                        <p class="footer-content-font text-muted"> Every day: 8 am - 5pm </p>
+
+                    </div>
+                    <div class="col-lg-3">
+                        <h6 class="footer-header-font">Sign Up for newsletter</h6>
+                        <p class="footer-content-font text-muted"> Don’t miss any sale!</p>
+                        <form action="#" method="post">
+                            <input type="text" placeholder="email@example.com">
+                            <button class="btn mt-3"
+                                style="padding:10px ; display:block ; width: 38%; margin-left: auto;" type="submit">Sign
+                                Me Up!</button>
+                        </form>
+
+
+                    </div>
+
+
+                </div>
+            </div>
+
+        </div>
+        <div>
+
+        </div>
+    </footer>
+
+
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

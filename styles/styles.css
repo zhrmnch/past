@@ -1,0 +1,251 @@
+html,body,header,#intro{
+    height: 100%;
+}
+
+.navbar {
+    background: #5680e9;
+    box-shadow: 0px 2px 5px #B1A296;
+}
+
+.form {
+    width: 600px;
+    margin: 0 auto;
+    border: 2px solid #5680e9;
+    border-radius: 0.35rem;
+    box-shadow: 0px 2px 5px #B1A296;
+    padding: 4rem;
+}
+
+input {
+    display: block;
+    border: 0;
+    width: 100%;
+    border-bottom: 1px solid #5680e9;
+    padding: 10px 5px;
+    margin: 5px 0;
+    outline: none;
+    background-color: #c1c8e4;
+
+}
+
+.navbar-brand {
+    color: #B1A296;
+
+}
+
+.nav-link {
+    color: #c1c8e4;
+
+}
+
+
+html {
+    background-color: #fff;
+}
+
+.card {
+    box-shadow: 5px 5px 6px #B1A296;
+    background-color: #c1c8e4;
+
+}
+
+.card-header {
+    background: #5680e9;
+}
+
+.section {
+    background-color: #c1c8e4;
+}
+
+.input-group {
+    margin: 1rem;
+
+}
+
+.active {
+
+    border-width: small;
+    border-bottom: solid;
+    border-color: #25274d;
+}
+
+.footer {
+    position: relative;
+    width: 100%;
+    background-color: #5680e9;
+    min-height: 100px;
+    box-shadow: 5px 5px 6px #B1A296;
+
+}
+
+.btn {
+
+    background-color: #25274d;
+    border-color: #25274d;
+    color: #c1c8e4;
+    padding: 0.5rem;
+    transition: 0.4s;
+
+
+}
+
+.btn:hover {
+    background-color: #5680e9;
+    border-color: #25274d;
+    color: #c1c8e4;
+    box-shadow: #B1A296;
+}
+
+.step-row {
+    width: 360px;
+    height: 40px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    box-shadow: 0 -1px 5px -1px #B1A296;
+}
+
+
+
+.form-check {
+    color: #25274d;
+}
+
+.form-check label:hover {
+    color: #5680e9;
+}
+
+.form-check input[type='checkbox']:hover,
+.form-check input[type='checkbox']:checked {
+    background-color: #5680e9;
+    border-color: #B1A296;
+    color: #fff;
+}
+
+
+.step-row {
+    width: 360px;
+    height: 40px;
+    margin: 0 auto;
+    display: flex;
+    box-shadow: 0 -1px 5px -1px #B1A296;
+}
+
+.form-step {
+    display: none;
+}
+
+.form-step-active {
+    display: block;
+}
+
+/* Progressbar */
+.progressbar {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    counter-reset: step;
+    margin: 2rem 0 4rem;
+  }
+  
+  .progressbar::before,
+  .progress {
+    content: "";
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    height: 4px;
+    width: 100%;
+    background-color: #5680e9;
+    z-index: 0;
+  }
+  
+  .progress {
+    background-color:#14A76C ;
+    width: 0%;
+    
+  }
+  
+  .progress-step {
+    width: 2.1875rem;
+    height: 2.1875rem;
+    background-color: #5680e9;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 2;
+  }
+  
+  .progress-step::before {
+    counter-increment: step;
+    
+  }
+  
+  .progress-step::after {
+    
+    position: absolute;
+    top: calc(100% + 0.5rem);
+    font-size: 0.85rem;
+    color: #25274d;
+  }
+  
+  .progress-step-active {
+    background-color:#14A76C;
+  }
+  
+
+
+  .footer-header-font{
+      font-size: 16px;
+      font-weight:600;
+      color: #25274d;
+  }
+
+  .footer-content-font{
+      font-size: 14px;
+      font-weight: 400;
+      color:#25274d;
+  }
+
+  .footer{
+      background-color: #5680e9;
+     
+      position: fixed;
+      bottom: 0;
+      padding: 10px 10px 10px 10px;
+      
+      width: 100%;
+      height: 50px;
+  }
+
+.background-intro{
+
+    background-image: url("../assets/landing.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 750px;
+    width: 100%;
+    
+    display: block;
+    
+}
+
+
+.intro-middle{
+    font-family: 'Quattrocento', serif;
+    color:#25274d ;
+    font-weight: 500;
+    font-size: 100px;
+    
+
+}
+
+.intro-topandbutton{
+
+    font-family: 'Philosopher', sans-serif;
+    color:#25274d ;
+    font-weight: 150;
+    font-size: 40px;
+
+}

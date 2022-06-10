@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+
+    <link href="styles/styles.css" rel="stylesheet" type="text/css">
+    <script src="/Scripts/script.js" defer></script>
+    <title>May Hair Salon</title>
+</head>
+
+<body>
+
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-md fixed-up">
+        <div class="container-xxl">
+            <a href="" class="navbar-brand">
+                <img src="/assets/logo.png" alt="May Hair Salon" width="100" height="" href="index.html">
+            </a>
+
+            <!--toggle button for mobile app-->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#main-navbar"
+                aria-controls="main-navbar" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end align-center" id="main-navbar">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link " href="index.html">HOME</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="stylists.html">STYLISTS</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link " href="services.html">SERVICES</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="location.html">LOCATION</a>
+                    </li>
+                    <li class="nav-item d-md-none active">
+                        <a class="nav-link" href="booknow.html">BOOK NOW</a>
+                    </li>
+                    <li class="nav-item ms-2 d-none d-md-inline">
+                        <a class="nav-link active" href="booknow.html">BOOK NOW</a>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!--This section was completed with the "https://www.youtube.com/watch?v=JFfVilQSius&t=531s" tutorial with some modification which includes HTML code and CSS codes-->
+    <section id="formbookingcard" class="bg-light mt-5">
+
+        <div class="container-xxl">
+
+
+            <form action="#" class="form" style="background-color: #C1C8E4;">
+                <!--progress bar-->
+                <div class="progressbar my-6">
+                    <div class="progress" id="progress"></div>
+                    <div class="progress-step progress-step-active" data-title="Contact"><img
+                            src="/assets/personalinfo.png" width="70%"></div>
+                    <div class="progress-step" data-title="Booking Details"><img src="/assets/bookinginfo.png"
+                            width="70%"></div>
+                    <div class="progress-step" data-title="Payment"><img src="/assets/bankinginfo.png" width="70%">
+                    </div>
+                    <div class="progress-step" data-title="Confirmation"><img src="/assets/confirmation.png"
+                            width="70%"></div>
+                </div>
+                <!--Personal information form-->
+                <div id="error"></div>
+                <div class="form-step form-step-active text-center">
+
+                    <h6 style="color: #5680E9;">PERSONAL INFORMATION</h6>
+                    <div class="input-group ">
+
+                        <input type="text" name="name" id="cotumername" placeholder="FirstName LastName" required />
+                        <div class="invalid-feedback">
+                            Please only enter a valid name. [Hint: A valid name only contains alphabets]
+                        </div>
+
+                    </div>
+                    <div class="input-group">
+
+                        <input type="email" name="email" id="email" placeholder="email@example.com" required />
+
+                    </div>
+                    <div class="input-group">
+
+                        <input type="tel" name="phone" id="phone" placeholder="xxx-xxx-xxxx"
+                            pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required />
+
+                    </div>
+                    <div class="text-right">
+                        <a href="#" class="btn btn-next " type="submit"
+                            style="display:block ; width: 50%; margin-left: auto;">Next</a>
+                    </div>
+
+
+                </div>
+
+
+                <!--Booking information form step-->
+                <div class="form-step ">
+                    <h6 style="color: #5680E9; padding-bottom: 10px;" class="text-center">APPOINTMENT
+                        INFORMATION</h6>
+
+                    <div class="input-group">
+                        <label>
+                            <h6> Choose all services that you want:</h6>
+
+                        </label>
+                        <div class="vstack ">
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="hairdyecheckbox">
+                                <label class="form-check-label display-" for="hairdyecheckbox">
+                                    Hair Dye
+                                </label>
+                            </div>
+
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="conditioningtextbox">
+                                <label class="form-check-label" for="conditioningtextbox">
+                                    Conditioning Treatment
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="haircutcheckbox">
+                                <label class="form-check-label" for="haircutcheckbox">
+                                    Hair Cut
+                                </label>
+                            </div>
+
+                        </div>
+                    </div>
+                    <hr />
+
+                    <div class="input-group ">
+                        <label>
+                            <h6>Choose your stylist:</h6>
+                        </label>
+                        <div class="dropdown mt-3" id="">
+                            <button class="btn dropdown-toggle" type="button" id="servicedropdown"
+                                data-bs-toggle="dropdown">
+                                Pick your Stylist
+                            </button>
+                            <ul class="dropdown-menu " aria-labelledby="servicedropdown">
+                                <li><a class="dropdown-item" href="#">Jane Doe</a></li>
+                                <li><a class="dropdown-item" href="#">Ellen Choi</a></li>
+                                <li><a class="dropdown-item" href="#">Adam Doe</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <hr />
+                    <div class="input-group">
+                        <label>
+                            <h6>Pick a Date:</h6>
+                        </label>
+                        <div>
+                            <input type="date" class="ms-2" style="display:block ;">
+                        </div>
+                        </lable>
+                    </div>
+                    <hr />
+
+
+
+                    <div class="input-group">
+                        <label>
+                            <h6> Pick your time:</h6>
+                        </label>
+                        <div class="dropdown mt-3 text-left" id="">
+                            <button class="btn dropdown-toggle mt-3" type="button" id="servicedropdown"
+                                data-bs-toggle="dropdown" style="display:block ; width: 100%; margin-right:auto;">
+                                00:00
+                            </button>
+                            <ul class="dropdown-menu" aria-labelledby="servicedropdown">
+                                <li><a class="dropdown-item" href="#">8:00</a></li>
+                                <li><a class="dropdown-item" href="#">9:00</a></li>
+                                <li><a class="dropdown-item" href="#">10:00</a></li>
+                                <li><a class="dropdown-item" href="#">12:00</a></li>
+                                <li><a class="dropdown-item" href="#">13:00</a></li>
+                                <li><a class="dropdown-item" href="#">14:00</a></li>
+                                <li><a class="dropdown-item" href="#">15:00</a></li>
+                                <li><a class="dropdown-item" href="#">16:00</a></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <hr />
+
+                    <div class="row ">
+                        <div class="col">
+                            <div class="text-left">
+                                <a href="#" class="btn btn-prev" style="display:block ; width:75%; margin-right: auto;">
+                                    &lt Back</a>
+                            </div>
+                        </div>
+
+                        <div class="col">
+                            <div class="text-right">
+                                <a href="#" class="btn btn-next"
+                                    style="display:block ; width: 75%; margin-left: auto;">Next
+                                    &gt</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!--payment information  step form-->
+                <div class="form-step  text-center">
+                    <h6 style="color: #5680E9;">PAYMENT INFORMATION</h6>
+                    <small class="text-muted">We will charge you $20 in the case of no show. Please note that there is
+                        no charge for booking.</small>
+
+                    <div class="input-group">
+                        <div class="hstack gap-3">
+                            <div class="custom-control custom-radio ">
+                                <input id="credit" name="paymentMethod" type="radio" class="custom-control-input"
+                                    checked required>
+                                <label class="custom-control-label" for="credit">Credit Card</label>
+                            </div>
+                            <div class="custom-control custom-radio ">
+                                <input id="credit" name="paymentMethod" type="radio" class="custom-control-input"
+                                    checked required>
+                                <label class="custom-control-label" for="credit">Debit Card</label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <hr />
+
+                    <div class="row text-left">
+                        <div class="vstack ">
+                            <h6 for="cc-name" style="text-align: start ;">Name on card:</h6>
+                            <input type="text" class="form-control" id="cc-name" placeholder="" required>
+                            <small class="text-muted" style="text-align: start ;">Full name as displayed on card.</small>
+
+
+                            <h6 for="ccnum" style="text-align: start ;" class="my-2">Credit card number:</h6>
+                            <input type="text" class="form-control" id="ccnum" placeholder="xxxx xxxx xxxx xxxx"
+                                required />
+
+
+                        </div>
+                        <div class="hstack" style="padding:20px ;">
+                            <div style="display:block ; width: 50%;  text-align: left;padding-right: 10px;">
+                                <h6 for="cc-expiration">Expiration</h6>
+                                <input type="text" class="form-control" id="cc-expiration" placeholder="xx/xx" required>
+
+                            </div>
+                            <div style="display:block ; width: 50%;  text-align: right; padding-left: 10px;">
+                                <h6 for="cc-expiration">CVV</h6>
+                                <input type="number" class="form-control" id="cc-cvv" placeholder="xxx" required>
+
+                            </div>
+
+
+                        </div>
+                        <hr style="padding:20px" />
+
+                        <div class="row ">
+                            <div class="col">
+                                <div class="text-left">
+                                    <a href="#" class="btn btn-prev" style="display:block ; width:75%; margin-right: auto;">
+                                        &lt Back</a>
+                                </div>
+                            </div>
+    
+                            <div class="col">
+                                <div class="text-right">
+                                    <a href="#" class="btn btn-next"
+                                        style="display:block ; width: 75%; margin-left: auto;">Complete
+                                        </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <!--Confirmation step form-->
+                <div class="form-step  text-center">
+                    <h6 style="color: #5680E9;">CONFIRMATION</h6>
+                    <small class="text-muted">You successfylly book your appintment! The confirmation email has been
+                        sent to you, please
+                        feel free to to contact us for any inquiries</small>
+                        <img src="/assets/Thumbsup.png">
+
+                </div>
+
+
+            </form>
+
+        </div>
+    </section>
+
+    <hr style="border:solid;" />
+    <footer>
+        <div>
+            <div class="container-xxl text-center">
+                <div class="row">
+                    <div class="col-lg-3">
+
+                        <h6 class="footer-header-font">Our Address:</h6>
+                        <p class="footer-content-font text-muted">123 Ottawa street</p>
+                        <p class="footer-content-font text-muted">Ottawa, Ontario, O2O 7U7</p>
+                        <hr />
+                        <h6 class="footer-header-font">Contact Information:</h6>
+                        <p class="footer-content-font text-muted">Phone-number: (613) 678 9900</p>
+                        <p class="footer-content-font text-muted">Email: info@mayhairstudio.ca</p>
+
+                    </div>
+                    <div class="col-lg-3">
+
+                        <h6 class="footer-header-font">Hours of Operation: </h6>
+                        <p class="footer-content-font text-muted"> Every day: 8 am - 5pm </p>
+
+                    </div>
+                    <div class="col-lg-3">
+                        <h6 class="footer-header-font">Sign Up for newsletter</h6>
+                        <p class="footer-content-font text-muted"> Don’t miss any sale!</p>
+                        <form action="#" method="post">
+                            <input type="text" placeholder="email@example.com">
+                            <button class="btn mt-3"
+                                style="padding:10px ; display:block ; width: 38%; margin-left: auto;" type="submit">Sign
+                                Me Up!</button>
+                        </form>
+
+
+                    </div>
+
+
+                </div>
+            </div>
+
+        </div>
+        <div>
+
+        </div>
+    </footer>
+
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
